@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GSK ACADEMY</title>
+    
+<link rel="stylesheet" href="shar.css">
+<style>*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.menu{
+    width:95%;
+    margin:auto;
+    overflow:hidden;
+    margin:30px;
+    font-size:43px;
+    float:right;
+    cursor:pointer;
+}
+
+.menu p{
+    margin-top:-43px;
+}
+
+
+nav{
+    width:100%;
+    background-color:grey;
+    color:#fff;
+    overflow:hidden;
+    box-sizing:borde-box;
+   position:absolute; 
+    margin-top:-200px;
+    transition:all 700ms ease;
+}
+
+.nav-open{
+    margin-top:37px;
+}
+
+.navbar{
+    list-style-type:none;
+}
+
+.navbar li a{
+    display:block;
+    padding:10px 20px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.navbar li a:hover{
+    background-color:#fff;
+    color:grey;
+}
+h2{
+   font-size:30px;
+   font-weight:600;
+   margin-bottom:15px;
+   line-height:1.8;
+   text-transform:uppercase;  
+}
+
+h4{
+    font-size:18px;
+    color:#303030;
+    font-weight:400;
+    line-height:2.4;
+}
+
+button:active{
+    opacity:.75;
+}
+
+header{
+    width:100%;
+    overflow:hidden;
+    background-color:dodgerblue;
+    position:absolute;
+    color:#fff;
+    top:0;
+}
+
+
+.text-center{
+    text-align:center;
+}
+
+.header-bottom{
+    width:100%;
+    background-color:dodgerblue;
+    margin-top:-1px;
+    overflow:hidden;
+    padding-bottom:100%;
+    padding-top:400px;
+    color:#fff;
+}
+
+.container{
+    padding:30px 40px;
+    padding-top:20px;
+    
+}
+
+h1{
+    margin-top:5%;
+    transition:all 700ms ease;
+    font-size:58px;
+    text-transform:capitalize;
+    text-align:center;
+    color:white;
+}
+p1{
+    margin-bottom:3%;
+    font-size:25px
+}
+
+.group-gmail{
+    width:70%;
+    margin-left:20%;
+    overflow:hidden;
+    margin-bottom:10%;
+    padding-top:80px;
+}
+
+#email{
+    width:100%;
+    padding-bottom:4px;
+    padding-top:4px;
+    padding-left:5px;
+    border-style:none;
+    display:block;
+}
+
+.btn{
+    border:none;
+    outline:none;
+    display:block;
+}
+
+.btn-danger{
+    width:10%;
+    margin-left:40%;
+    margin-top:3.5%;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+.header-bottom-small{
+    margin-top:5%;
+}
+
+
+p1{
+    margin-bottom:3%;
+    font-size:25px
+}
+.btn-block{
+    width:100%;
+    ;
+}
+
+.bg-grey{
+    background-color:lightgrey ;
+    text-align:center;
+    font-size:100px;
+  }
+
+.footer{
+ text-align:center;
+ background-color:lightblue;
+}
+</style>
+</head>
+<body>
+  <header>
+      <div class="menu" onclick="menu_open()">
+              <p>_</p>
+              <p>_</p>
+              <p>_</p>
+          </div>
+      </div>
+  </header>  
+  <nav id="nav">
+      <ul class="navbar text-center">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav> 
+  <div class="container header-bottom">
+     <h1>GSK ACADEMY</h1> 
+     <p1>We Specialize in Training Students </p1>
+    <form> 
+     <div class="group-gmail">
+         <input type="gmail" id="email" placeholder="Email address" required/>
+         <button class="btn btn-danger">Subscribe</button>
+     </div>
+    </form>
+  </div>
+  <div class="container bg-grey" id="about">
+  <h2 class="title">ABOUT ACADEMY </h2>
+     <h4>We hereby offering our brand new training programs by Eckovation in AI&ML, Cloud & Blockchain. Each of these programs is of a 4 months duration and consisting of 150+ hours of live-classes by Industry experts<br>We monitor every student and student can clarify their doubts to the trainer by one on one.  
+</h4><br>
+      <button class="btn btn-block">Get in touch</button>
+  </div>
+<div class="container bg-grey" id="service">
+    <h2 class="title">Courses</h2>  
+    <h4 class="title-wt"><br>1:
+
+Masters Program in Artificial Intelligence with Spec in Machine Learning, Deep Learning by Eckovation:
+<br><br>2:Masters Program in Cloud Computing by Eckovation<br><br>3:Masters Program in Software Development in Blockchain by Eckovation:</h4>
+</div>
+<div class="container bg-grey" id="contact">
+    <h2 class="title">Contact</h2>  
+    <h4 class="title-wt">sharath16567t1542@gmail.com<br>
+<br>
+9949278280     </h4>
+</div>
+<div class="footer" id="footer">
+ <p2> ABOUT   - COURSES  -  CONTACT<br><br>
+@2021 GSK ACADEMY
+</p2>
+</div>
+
+<script>
+function menu_open(){
+var nav = document.getElementById("nav");
+var headerBottom = document.getElementById("header-bottom");
+
+nav.classList.toggle("nav-open")
+headerBottom.classList.toggle("header-bottom-small");
+}
+
+</script>  
+</body>
+</html>
